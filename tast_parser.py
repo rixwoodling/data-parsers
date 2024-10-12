@@ -157,40 +157,6 @@ def sort_results_by_header_and_last_unique_component(results, headers):
 
     return sorted_results
 
-# Function to sort the results by header and subdirectory, using the last unique component
-def sort_results_by_header_and_last_unique_componentOFF(results, headers):
-    sorted_results = []
-
-    # Loop through each header in the header list
-    for header in headers:
-        # Filter results that match the current header
-        header_results = [result for result in results if f"/{header}/" in result]
-
-        # Now sort the results for this header by the last unique component (e.g., run1, run2)
-        if header_results:
-            # Split each path into components (using '/' as the delimiter)
-            split_results = [result.split('/') for result in header_results]
-
-            # Determine the length of the shortest path
-            max_depth = min(len(path) for path in split_results)
-
-            # Start comparing components from the end, going backwards
-            for i in range(1, max_depth + 1):
-                # Get the i-th component from the end for all paths (e.g., run1, run2)
-                components = [path[-i] for path in split_results]
-
-                # Check if all components are the same
-                if len(set(components)) > 1:
-                    # Found the first non-unique component, now sort by this component
-                    sorted_header_results = sorted(header_results, key=lambda x: x.split('/')[-i])
-                    sorted_results.extend(sorted_header_results)  # Add sorted header-specific results to the overall list
-                    break
-        else:
-            # If all components are the same, append the header results as is
-            sorted_results.extend(header_results)
-
-    return sorted_results
-
 # Function to load and extract the 'value' from each JSON file, using the provided key
 def extract_value_from_json(json_file_path, json_key):
     try:
