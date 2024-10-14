@@ -1,3 +1,10 @@
+## Parsers
+- [Tast Data Parser](#features-of-tast-data-parser)
+- [Multi-Benchmark Support](#multi-benchmark-support)
+- [Data Extraction](#data-extraction)
+- [Sorting and Padding](#sorting-and-padding)
+- [CSV Output](#csv-output)
+
 
 ---
 #### Tast Data Parser
