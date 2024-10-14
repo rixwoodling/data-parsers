@@ -23,7 +23,6 @@ python3 crossbench_parser.py path/to/speedometer3.0/ | tee mytest.csv
 ---
 #### Get Device Info
 A Bash script to retrieve system device information for local or remote machines, output-friendly to CSV format.
-Usage
 ```
 bash ./get_device_info.sh | tee myspecs.csv
 ```
