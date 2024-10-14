@@ -9,7 +9,7 @@ python3 tast_parser.py path/to/tast_tests/ | tee output.csv
 - Data Extraction: Extracts relevant benchmark scores from results-chart.json files within the specified directories.
 - Sorting and Padding: Organizes benchmark runs based on directory structure, fills missing values, and calculates averages.
 - CSV Output: Outputs the structured results with headers and averages to stdout in CSV format.
-- 
+
 ---
 #### Crossmark Data Parser
 A Python script that parses Speedometer 3.0 benchmark data (and future benchmarks) into a structured table with averages and outputs it in CSV format.
