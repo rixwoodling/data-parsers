@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 #
-# Author:      Rix Woodling
-# Created:     2024-10-11
-# Description: Parse Speedometer, Speedometer3, MotionMark1_3, and WebXPRT4 tast data into a table 
-# Version:     1.0
+# Author:       Rix Woodling
+# Created:      2024-10-11
+# Description:  Parse Speedometer, Speedometer3, MotionMark1_3, and WebXPRT4 tast data into a table 
+# Last updated: 2024-10-14, Cleanup unused function
 #
-
 
 import os
 import sys
