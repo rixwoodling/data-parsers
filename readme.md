@@ -5,8 +5,9 @@ This script processes benchmark results (Speedometer, Speedometer3, MotionMark1_
 ```
 python3 tast_parser.py path/to/tast_tests/ | tee output.csv
 ```
-> Speedometer3,R1,R2,Avg
-> TEST_A,342.45,234.34,233.37
-> TEST_B,123.34,567.89,345.61
----
+```
+Speedometer3,R1,R2,Avg
+TEST_A,342.45,234.34,233.37
+TEST_B,123.34,567.89,345.61
+```
 
