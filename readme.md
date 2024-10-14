@@ -1,9 +1,5 @@
 ## Parsers
-- [Tast Data Parser](#tast-data-parser)
-- [Crossmark Data Parser](#multi-benchmark-support)
-- [Data Extraction](#data-extraction)
-- [Sorting and Padding](#sorting-and-padding)
-- [CSV Output](#csv-output)
+[Tast Data Parser](#tast-data-parser) | [Crossmark Data Parser](#multi-benchmark-support) | [Data Extraction](#data-extraction) | [Sorting and Padding](#sorting-and-padding) | [CSV Output](#csv-output)
 
 
 ---
