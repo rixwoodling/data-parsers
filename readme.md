@@ -1,5 +1,5 @@
 ## Parsers
-[Tast Data Parser](#tast-data-parser) | [Crossmark Data Parser](#crossmark-data-parser) | [Get Device Info](#get-device-info)
+[Tast Data Parser](#tast-data-parser) | [Crossmark Data Parser](#crossmark-data-parser) | [Get Device Info](#get-device-info) | [Browserbench Interactive Runner HTML Parser](#get-device-info)
 
 
 ---
@@ -37,4 +37,15 @@ bash ./get_device_info.sh user@remote_ip
 - Includes CBI settings and TME status.
 - Supports local and remote execution via SSH.
 ---
+#### Browserbench Interactive Runner HTML Parser
+
+A Python script that extracts and formats data from HTML <pre> tags, designed for tests saved as html files generated from browserbench.org/Speedometer2.1/InteractiveRunner.html, then structured into csv-friendly tables.
+```
+python3 irun_parser.py path/to/file.html | tee output.csv
+```
+- HTML Parsing: Extracts <pre> content using HTMLParser.
+- Data Transformation: Converts colons to commas and organizes data into nested sublists.
+- Value Formatting: Rounds values to two decimal places and reattaches suffixes.
+- Custom Output: Prints a header, filters unnecessary sublists, and displays relevant items.
+
 
