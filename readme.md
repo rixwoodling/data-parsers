@@ -38,7 +38,7 @@ bash ./get_device_info.sh user@remote_ip
 - Supports local and remote execution via SSH.
 ---
 #### Browserbench Interactive Runner HTML Parser
-A Python script that extracts and formats data from HTML <pre> tags, designed for tests saved as html files generated from browserbench.org/Speedometer2.1/InteractiveRunner.html, then structured into csv-friendly tables.
+A Python script that extracts and formats data from HTML `<pre>` tags, designed for tests saved as html files generated from browserbench.org/Speedometer2.1/InteractiveRunner.html, then structured into csv-friendly tables.
 ```
 python3 irun_parser.py path/to/file.html | tee output.csv
 ```
