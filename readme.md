@@ -42,7 +42,7 @@ A Python script that extracts and formats data from HTML `<pre>` tags, designed 
 ```
 python3 irun_parser.py path/to/file.html | tee output.csv
 ```
-- HTML Parsing: Extracts <pre> content using HTMLParser.
+- HTML Parsing: Extracts `<pre>` content using HTMLParser.
 - Data Transformation: Converts colons to commas and organizes data into nested sublists.
 - Value Formatting: Rounds values to two decimal places and reattaches suffixes.
 - Custom Output: Prints a header, filters unnecessary sublists, and displays relevant items.
